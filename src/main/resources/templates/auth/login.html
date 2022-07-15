@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .login-page{
+            width: 360px;
+            padding: 2%;
+            border: 1px solid black;
+        }
+        .login-form{
+            display :flex;
+            flex-direction: column;
+        }
+        .login-form *{
+            padding: 5px;
+            font-size: 20px;
+        }
+        .login-form input + *{
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <h1 style="text-align: center">LOGIN</h1>
+        <div class="form">
+          <form class="login-form" action="/auth/login" method="POST">
+            <input type="text" placeholder="username" name="username">
+            <input type="password" placeholder="password"/ name="password">
+            <button>login</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
